@@ -44,8 +44,10 @@ function getComposition(/* f, g */) {
  *   power05(16) => 4
  *
  */
-function getPowerFunction(/* exponent */) {
-  throw new Error('Not implemented');
+function getPowerFunction(exponent) {
+  return function (x) {
+    return x ** exponent;
+  };
 }
 
 
@@ -62,8 +64,17 @@ function getPowerFunction(/* exponent */) {
  *   getPolynom(8)     => y = 8
  *   getPolynom()      => null
  */
-function getPolynom() {
-  throw new Error('Not implemented');
+function getPolynom(...args) {
+  if (args.length === 3) {
+    return `y = ${args[0]}*x^2 + ${args[1]}*x + ${args[2]}`;
+  }
+  if (arguments.length === 2) {
+    return `y = ${args[0]}*x + ${args[1]}`;
+  }
+  if (arguments.length === 1) {
+    return `y = ${args[0]}`;
+  }
+  return null;
 }
 
 
@@ -171,6 +182,10 @@ function partialUsingArguments(/* fn, ...args1 */) {
  */
 function getIdGeneratorFunction(/* startFrom */) {
   throw new Error('Not implemented');
+  // let num = startFrom;
+  // return function () {
+  //   num += 1;
+  // };
 }
 
 

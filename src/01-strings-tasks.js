@@ -132,17 +132,16 @@ function repeatString(value, count) {
  *   'I like legends', 'end' => 'I like legs',
  *   'ABABAB','BA' => 'ABAB'
  */
-function removeFirstOccurrences(str, value) {
-  const arr = str.split(' ');
-  const result = [];
-
-  for (let i = 0; i < arr.length; i += 1) {
-    if (arr[i].search(value)) {
-      result.push(arr[i]);
-    }
-  }
-
-  return result.join(' ');
+function removeFirstOccurrences(/* str, value */) {
+  throw new Error('Not implemented');
+  // const arr = str.split(' ');
+  // const result = [];
+  // for (let i = 0; i < arr.length; i += 1) {
+  //   if (arr[i].search(value)) {
+  //     result.push(arr[i]);
+  //   }
+  // }
+  // return result.join(' ');
 }
 
 /**
@@ -239,6 +238,7 @@ function getRectangleString(/* width, height */) {
  *
  */
 function encodeToRot13(/* str */) {
+  throw new Error('Not implemented');
   // const firstColumn = ['a', 'b', 'c', 'd', 'e', 'f', 'j', 'h', 'i', 'j', 'k', 'l', 'm'];
   // const secondColumn = ['n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
   //

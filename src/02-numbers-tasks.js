@@ -51,8 +51,9 @@ function getCircleCircumference(radius) {
  *  10, 0  => 5
  *  -3, 3  => 0
  */
-function getAverage(value1, value2) {
-  return (value1 + value2) / 2;
+function getAverage(/* value1, value2 */) {
+  throw new Error('Not implemented');
+  // return (value1 + value2) / 2;
 }
 
 /**
@@ -202,15 +203,16 @@ function roundToPowerOfTen(num, pow) {
  *   16 => false
  *   17 => true
  */
-function isPrime(n) {
-  if (n !== 1 || n !== 2 || n !== 3 || n !== 5 || n !== 7) {
-    if (n % 2 !== 0 || n % 3 !== 0 || n % 5 !== 0 || n % 7 !== 0) {
-      return false;
-    }
-    return true;
-  }
-
-  return false;
+function isPrime(/* n */) {
+  throw new Error('Not implemented');
+  // if (n !== 1 || n !== 2 || n !== 3 || n !== 5 || n !== 7) {
+  //   if (n % 2 !== 0 || n % 3 !== 0 || n % 5 !== 0 || n % 7 !== 0) {
+  //     return false;
+  //   }
+  //   return true;
+  // }
+  //
+  // return false;
 }
 
 /**
@@ -229,6 +231,7 @@ function isPrime(n) {
  *   toNumber(new Number(42), 0) => 42
  */
 function toNumber(/* value, def */) {
+  throw new Error('Not implemented');
   // if (isNaN(value)) {
   //   return 0 - def;
   // }
